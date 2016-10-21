@@ -30,7 +30,7 @@ export default class Home extends React.Component {
                 <h1>Welcome, {profile.nickname}!</h1>
 
                 <p>
-                    <b> Your account created at: </b> {moment(profile.created_at).format('LLL')} <br/>
+                    <b> Your account was created at: </b> {moment(profile.created_at).format('LLL')} <br/>
                     <b> Your email: </b> {profile.email} <br/>
                     <b> Last update: </b> {moment(profile.updated_at).format('LLL')} <br/>
                 </p>
