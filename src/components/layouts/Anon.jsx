@@ -1,6 +1,12 @@
 import React from 'react';
 
-export default class Main extends React.Component {
+export default class Anon extends React.Component {
+    componentWillMount() {
+        if ( this.props.auth.loggedIn() ) {
+            this.context.router.push('/home');
+        }
+    }
+
     render() {
         return (
             <div className='AnonLayout'>
@@ -9,3 +15,7 @@ export default class Main extends React.Component {
         );
     }
 }
+
+Anon.contextTypes = {
+    router: React.PropTypes.object
+};

@@ -1,10 +1,9 @@
 import React from 'react';
-import { browserHistory } from 'react-router';
 
 export default class Main extends React.Component {
     componentWillMount() {
         if ( !this.props.auth.loggedIn() ) {
-            browserHistory.replace('/#/login');
+            this.context.router.push('/login');
         }
     }
 
@@ -16,3 +15,7 @@ export default class Main extends React.Component {
         );
     }
 }
+
+Main.contextTypes = {
+    router: React.PropTypes.object
+};
