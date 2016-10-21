@@ -1,4 +1,4 @@
-# SANDBOX FOR KIDS WHO WANT TO PLAY WITH AUTH0
+# SANDBOX FOR KIDS WHO WANNA PLAY WITH AUTH0
 ------------------------------------
 
 Test project for understanding Auth0. Do not forget to update config.js with your ID and DOMAIN.
