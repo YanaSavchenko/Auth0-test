@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route, Redirect } from 'react-router';
+import { Route, Redirect } from 'react-router';
 
 import App   from './App.jsx';
 import Main  from './components/layouts/Main.jsx';
